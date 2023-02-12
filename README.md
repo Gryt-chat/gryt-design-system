@@ -92,6 +92,17 @@ const nextConfig = {
 module.exports = nextConfig
 ```
 
+Remove tailwind config from `postcss.config.js` file
+
+```js
+module.exports = {
+  plugins: {
+    // tailwindcss: {},
+    autoprefixer: {},
+  },
+}
+```
+
 ## Author
 
 👤 **Gryt**

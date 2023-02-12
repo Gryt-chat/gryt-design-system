@@ -1,4 +1,4 @@
-import React = require("react");
+import React from "react";
 type modalPosition = "modal-bottom" | "modal-middle";
 type modalParameterType = {
     children?: any;

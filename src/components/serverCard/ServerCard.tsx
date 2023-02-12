@@ -1,5 +1,5 @@
-import React = require("react");
 import Image from "next/image";
+import React from "react";
 import { ClassAttributes } from "react";
 import { JsxElement } from "typescript";
 import style from "./style.module.scss";

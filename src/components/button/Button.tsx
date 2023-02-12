@@ -1,4 +1,5 @@
-import React = require("react");
+import React from "react";
+
 type buttonType =
     | "btn-primary"
     | "btn-secondary"
