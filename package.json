@@ -1,0 +1,56 @@
+{
+    "name": "@gryt/ui",
+    "version": "1.0.0",
+    "description": "Official design system from Gryt!",
+    "main": "src/index.ts",
+    "files": [
+        "src/**/*"
+    ],
+    "directories": {
+        "src": "src"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Gryt-chat/gryt-ui.git"
+    },
+    "keywords": [
+        "design-system",
+        "gryt",
+        "gryt-design-system",
+        "gds",
+        "reactjs",
+        "nextjs",
+        "daisyui",
+        "tailwindcss"
+    ],
+    "author": "Gryt",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Gryt-chat/gryt-ui/issues"
+    },
+    "homepage": "https://github.com/Gryt-chat/gryt-ui#readme",
+    "dependencies": {
+        "@tsconfig/recommended": "^1.0.2",
+        "@types/node": "18.11.18",
+        "@types/react": "^18.0.28",
+        "@types/react-dom": "18.0.10",
+        "@typescript-eslint/eslint-plugin": "^5.48.1",
+        "daisyui": "^2.50.0",
+        "next": "^13.1.6",
+        "react": "^18.2.0",
+        "react-icons": "^4.7.1",
+        "sass": "^1.58.0",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17",
+        "ts-loader": "^9.4.2"
+    },
+    "devDependencies": {
+        "@babel/preset-typescript": "^7.18.6",
+        "postcss": "^8.4.21",
+        "postcss-loader": "^7.0.2",
+        "source-map-loader": "^4.0.1",
+        "typescript": "^4.9.5"
+    }
+}
