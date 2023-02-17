@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import { ClassAttributes } from "react";
 import { JsxElement } from "typescript";
-import style from "./style.module.scss";
 
 type RGB = `rgb(${number}, ${number}, ${number})`;
 type RGBA = `rgba(${number}, ${number}, ${number}, ${number})`;
@@ -41,7 +40,7 @@ export function ServerCard({
 }: cardParameterType) {
     return (
         <div
-            className={`${style.serverCard} card bg-base-100 flex flex-col rounded-lg overflow-hidden shadow-xl ${className}`}
+            className={`serverCard card bg-base-100 flex flex-col rounded-lg overflow-hidden shadow-xl ${className}`}
             style={{
                 width: cardWith,
                 height: cardHeight,
