@@ -1,6 +1,6 @@
 {
     "name": "@gryt/ui",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "description": "Official design system from Gryt!",
     "main": "src/index.tsx",
     "files": [
