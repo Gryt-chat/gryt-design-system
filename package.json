@@ -1,6 +1,6 @@
 {
   "name": "@gryt/ui",
-  "version": "1.1.0",
+  "version": "1.1.2",
   "description": "Official design system from Gryt!",
   "author": "Gryt Chat <spam@gryt.chat> (https://gryt.chat/)",
   "keywords": [
@@ -26,7 +26,7 @@
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
   "engines": {
-    "node": ">=10"
+    "node": ">=16"
   },
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
@@ -41,7 +41,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^18.2.0"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.9",
@@ -84,6 +84,7 @@
   },
   "files": [
     "dist",
-    "src/styles"
+    "src/styles/globals.scss",
+    "src/styles/tailwind.js"
   ]
 }
