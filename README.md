@@ -2,7 +2,7 @@
 
 > Made with create-react-library
 
-[![NPM](https://img.shields.io/npm/v/@gryt/ui.svg)](https://www.npmjs.com/package/@gryt/ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/@gryt/ui.svg)](https://www.npmjs.com/package/@gryt/ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-typescript_eslint-darkblue.svg)](https://typescript-eslint.io/)
 
 ## Install
 
