@@ -88,6 +88,7 @@
   "files": [
     "dist",
     "style.scss",
-    "tailwind.js"
+    "tailwind.js",
+    "fonts"
   ]
 }

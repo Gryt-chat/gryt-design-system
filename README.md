@@ -33,14 +33,10 @@ module.exports = {
 // _app.tsx
 
 import { AppProps } from 'next/app';
-import { FontStyle } from '@gryt/ui'
 import "@gryt/ui/style.scss";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <>
-  <FontStyle />
-  <Component {...pageProps} />
-  </>
+  return <Component {...pageProps} />
 }
 ```
 
@@ -52,7 +48,7 @@ export default function App({ Component, pageProps }: AppProps) {
 // somepage.tsx
 
 import React, { Component } from 'react'
-import Button from '@gryt/ui'
+import { Button } from '@gryt/ui'
 
 export default function SomePage() {
   return (
