@@ -33,7 +33,7 @@ interface buttonParameterType extends React.HTMLAttributes<HTMLButtonElement> {
 export function Button({
   children,
   className,
-  type,
+  type = 'btn-primary',
   iconOnly,
   loading,
   noAnimation,
@@ -42,11 +42,9 @@ export function Button({
 }: buttonParameterType) {
   return (
     <button
-      className={`${className ?? ''} btn gap-2 ${type ?? ''} ${
-        iconOnly ?? ''
-      } ${size ?? ''}${loading !== undefined ? ' loading' : ''}${
-        noAnimation !== undefined ? ' glass' : ''
-      }`}
+      className={`btn gap-2 ${type ?? ''} ${iconOnly ?? ''} ${size ?? ''}${
+        loading !== undefined ? ' loading' : ''
+      }${noAnimation !== undefined ? ' glass' : ''} ${className ?? ''}`}
       {...props}
     >
       {children}
