@@ -35,8 +35,8 @@ module.exports = {
 import { AppProps } from 'next/app';
 import "@gryt/ui/src/styles/globals.scss";
 
-function MyApp({ Component, pageProps }: AppProps<{ initialSession: Session }>) {
-  return <Component {...pageProps} />
+export default function App({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />;
 }
 ```
 
