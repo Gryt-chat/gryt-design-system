@@ -7,21 +7,39 @@
 ## Install
 
 ```bash
-npm install --save @gryt/ui
+npm i @gryt/ui @tailwindcss/typography tailwind daisyui
+```
+or
+```bash
+yarn add @gryt/ui @tailwindcss/typography tailwind daisyui
 ```
 
 ## Usage
 
+### Button
+
 ```tsx
+// somePage.tsx
 import React, { Component } from 'react'
 
-import MyComponent from '@gryt/ui'
-import '@gryt/ui/dist/index.css'
+import Button from '@gryt/ui'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <Button>Click me!</Button>
   }
+}
+```
+
+### Add styling (including tailwind config)
+
+```tsx
+// _app.tsx
+import { AppProps } from 'next/app';
+import "@gryt/ui/src/styles/globals.scss";
+
+function MyApp({ Component, pageProps }: AppProps<{ initialSession: Session }>) {
+  return <Component {...pageProps} />
 }
 ```
 
