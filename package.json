@@ -25,7 +25,7 @@
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.tsx",
-  "typings": "src/index",
+  "typings": "dist/src/index",
   "engines": {
     "node": ">=16"
   },
