@@ -24,7 +24,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
-  "source": "src/index.tsx",
+  "source": "dev/src/index.ts",
   "typings": "dist/src/index",
   "engines": {
     "node": ">=16"
