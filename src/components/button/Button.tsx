@@ -20,7 +20,7 @@ type buttonSize =
   | 'btn-xs'
   | 'btn-wide'
   | 'btn-block'
-type buttonParameterType = {
+interface buttonParameterType extends React.HTMLAttributes<HTMLButtonElement> {
   children?: any
   className?: string
   type?: buttonType
@@ -39,9 +39,7 @@ export function Button({
   noAnimation,
   size,
   ...props
-}: buttonParameterType): React.ButtonHTMLAttributes<
-  buttonParameterType & HTMLButtonElement
-> {
+}: buttonParameterType) {
   return (
     <button
       className={`${className ?? ''} btn gap-2 ${type ?? ''} ${
