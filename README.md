@@ -16,7 +16,7 @@ yarn add @gryt/ui @tailwindcss/typography tailwind daisyui
 
 ### Tailwind preset
 
-```ts
+```js
 // tailwind.config.js
 
 module.exports = {
@@ -29,7 +29,7 @@ module.exports = {
 
 ### Styling
 
-```tsx
+```jsx
 // _app.tsx
 
 import { AppProps } from 'next/app';
@@ -44,7 +44,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
 ### Button
 
-```tsx
+```jsx
 // somepage.tsx
 
 import React, { Component } from 'react'
