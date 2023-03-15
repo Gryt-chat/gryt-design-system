@@ -17,8 +17,10 @@ type badgeParameterType = {
   size?: badgeSize
 }
 
-export function Badge({ children, type, size }: badgeParameterType) {
+export function Badge({ children, type, size, ...props }: badgeParameterType) {
   return (
-    <div className={`badge ${type ?? ''} ${size ?? ''} gap-2`}>{children}</div>
+    <div className={`badge ${type ?? ''} ${size ?? ''} gap-2`} {...props}>
+      {children}
+    </div>
   )
 }

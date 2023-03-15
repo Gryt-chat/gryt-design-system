@@ -37,8 +37,11 @@ export function Button({
   iconOnly,
   loading,
   noAnimation,
-  size
-}: buttonParameterType) {
+  size,
+  ...props
+}: buttonParameterType): React.ButtonHTMLAttributes<
+  buttonParameterType & HTMLButtonElement
+> {
   return (
     <button
       className={`${className ?? ''} btn gap-2 ${type ?? ''} ${
@@ -46,6 +49,7 @@ export function Button({
       } ${size ?? ''}${loading !== undefined ? ' loading' : ''}${
         noAnimation !== undefined ? ' glass' : ''
       }`}
+      {...props}
     >
       {children}
     </button>
