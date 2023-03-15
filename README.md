@@ -33,7 +33,7 @@ module.exports = {
 // _app.tsx
 
 import { AppProps } from 'next/app';
-import "@gryt/ui/src/styles/globals.scss";
+import "@gryt/ui/style.scss";
 
 export default function App({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;

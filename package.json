@@ -86,7 +86,7 @@
   },
   "files": [
     "dist",
-    "src/styles/globals.scss",
-    "src/styles/tailwind.js"
+    "style.scss",
+    "tailwind.js"
   ]
 }
