@@ -44,6 +44,7 @@ export function ServerCard({
         style={{ height: bannerHeight * 2 }}
       >
         <Image
+          quality={100}
           src={logoURL ?? ''}
           width={logoSize}
           height={logoSize}
@@ -61,6 +62,7 @@ export function ServerCard({
       {bannerURL !== undefined ? (
         <figure>
           <Image
+            quality={100}
             src={bannerURL}
             width={cardWith}
             height={bannerHeight}

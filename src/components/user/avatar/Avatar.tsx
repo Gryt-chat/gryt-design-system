@@ -46,6 +46,7 @@ export function Avatar({
 }: avatarParameterType) {
   return (
     <Image
+      quality={100}
       src={src}
       width={size * 4}
       height={size * 4}
