@@ -14,17 +14,22 @@ or
 yarn add @gryt/ui @tailwindcss/typography tailwind daisyui
 ```
 
-### Tailwind preset
+### Tailwind configuration
 
 ```ts
 // tailwind.config.js
 
 module.exports = {
-  presets: [
-    require('@gryt/ui/tailwind')
-  ],
-  // ...
-}
+    content: [
+      // ...
+      "./node_modules/@gryt/**/*.{js,ts}",
+    ],
+    presets: [
+      // ...
+      require('@gryt/ui/tailwind')
+    ]
+    // ...
+  }
 ```
 
 ### Styling
