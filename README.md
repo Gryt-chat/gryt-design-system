@@ -14,32 +14,49 @@ or
 yarn add @gryt/ui @tailwindcss/typography tailwind daisyui
 ```
 
-## Usage
+### Tailwind preset
 
-### Button
+```ts
+// tailwind.config.js
 
-```tsx
-// somePage.tsx
-import React, { Component } from 'react'
-
-import Button from '@gryt/ui'
-
-class Example extends Component {
-  render() {
-    return <Button>Click me!</Button>
-  }
+module.exports = {
+  presets: [
+    require('@gryt/ui/tailwind')
+  ],
+  // ...
 }
 ```
 
-### Add styling (including tailwind config)
+### Styling
 
 ```tsx
 // _app.tsx
+
 import { AppProps } from 'next/app';
 import "@gryt/ui/src/styles/globals.scss";
 
 function MyApp({ Component, pageProps }: AppProps<{ initialSession: Session }>) {
   return <Component {...pageProps} />
+}
+```
+
+## Usage
+
+### Button
+
+```tsx
+// somepage.tsx
+
+import React, { Component } from 'react'
+import Button from '@gryt/ui'
+
+export default function SomePage() {
+  return (
+      <div>
+        <h1 className="text-2xl font-bold text-primary">Welcome!</h1>
+        <Button>Click me!</Button>
+      </div>
+  );
 }
 ```
 
