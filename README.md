@@ -1,6 +1,6 @@
 # @gryt/ui
 
-> Made with create-react-library
+## [Preview here](https://ui.gryt.chat/)
 
 [![NPM](https://img.shields.io/npm/v/@gryt/ui.svg)](https://www.npmjs.com/package/@gryt/ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-typescript_eslint-darkblue.svg)](https://typescript-eslint.io/)
 
