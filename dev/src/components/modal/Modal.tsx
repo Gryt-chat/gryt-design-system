@@ -47,7 +47,9 @@ export function ModalBox({
       <input type='checkbox' id={modalId} className='modal-toggle' />
       {clickOutside === undefined || clickOutside === false ? (
         <div className={`modal backdrop-blur ${modalPosition ?? ''}`}>
-          <div className={`${className} modal-box relative`}>{children}</div>
+          <div className={`${className} modal-box relative max-h-screen`}>
+            {children}
+          </div>
         </div>
       ) : (
         <label
