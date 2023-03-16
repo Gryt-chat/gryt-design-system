@@ -48,6 +48,7 @@ export function ServerCard({
           src={logoURL ?? ''}
           width={logoSize}
           height={logoSize}
+          draggable={false}
           className='rounded-full p-1'
           style={{
             width: logoSize,
@@ -60,20 +61,19 @@ export function ServerCard({
         />
       </div>
       {bannerURL !== undefined ? (
-        <figure>
-          <Image
-            quality={100}
-            src={bannerURL}
-            width={cardWith}
-            height={bannerHeight}
-            className='w-full object-cover'
-            style={{
-              height: bannerHeight,
-              backgroundColor: bannerColor
-            }}
-            alt='' // No alt-text so that screen readers dont perceive this as an image
-          />
-        </figure>
+        <Image
+          quality={100}
+          src={bannerURL}
+          width={cardWith}
+          height={bannerHeight}
+          draggable={false}
+          className='w-full object-cover'
+          style={{
+            height: bannerHeight,
+            backgroundColor: bannerColor
+          }}
+          alt='' // No alt-text so that screen readers dont perceive this as an image
+        />
       ) : (
         <div
           className='w-full bg-base-200'

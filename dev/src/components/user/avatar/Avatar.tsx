@@ -50,6 +50,7 @@ export function Avatar({
       src={src}
       width={size * 4}
       height={size * 4}
+      draggable={false}
       style={{
         width: size * 4,
         height: size * 4,

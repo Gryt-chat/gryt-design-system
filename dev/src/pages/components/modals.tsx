@@ -7,7 +7,7 @@ const WelcomeModal = () => {
   const id = 'WelcomeModal'
   return (
     <>
-      <ModalButton modalId={id} className='btn'>
+      <ModalButton modalId={id} className='btn btn-ghost'>
         Welcome
       </ModalButton>
       <ModalBox modalId={id}>
@@ -28,7 +28,7 @@ const WelcomeModal = () => {
             If you need any help, please visit our{' '}
             <Link
               className='link link-secondary'
-              href='https://github.com/orgs/Gryt-chat/discussions/categories/q-a'
+              href='https://github.com/orgs/Gryt-chat/discussions'
               target='_blank'
             >
               forums
