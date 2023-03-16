@@ -26,7 +26,7 @@ export default function buttons() {
       >
         <div className='flex flex-col gap-2 items-center'>
           <h1 className='font-semibold text-lg'>Regular</h1>
-          <Button>Normal</Button>
+          <Button>Default</Button>
           <Button type='btn-primary'>Primary</Button>
           <Button type='btn-secondary'>Secondary</Button>
           <Button type='btn-accent'>Accent</Button>
@@ -44,7 +44,7 @@ export default function buttons() {
         <div className='flex flex-col gap-2 items-center'>
           <h1 className='font-semibold text-lg'>Icon and text</h1>
           <Button>
-            <BsCartFill className='w-4 h-4' /> Normal
+            <BsCartFill className='w-4 h-4' /> Default
           </Button>
           <Button type='btn-primary'>
             <BsHandIndexFill className='w-4 h-4' /> Primary
