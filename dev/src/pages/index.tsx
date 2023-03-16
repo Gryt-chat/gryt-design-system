@@ -15,9 +15,7 @@ function NavLink({
   return (
     <Link
       className={`rounded-xl p-2 text-sm ${
-        router.pathname === href
-          ? 'font-medium btn-accent btn-active'
-          : 'btn-ghost'
+        router.pathname === href ? 'font-medium btn-primary ' : 'btn-ghost'
       }`}
       href={href}
     >
