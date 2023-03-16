@@ -65,6 +65,42 @@ export default function SomePage() {
 }
 ```
 
+## Developing new components
+
+**Clone** this repository and follow the steps below.
+
+### Preparation
+
+Use the `dev` folder.
+
+```sh
+cd dev
+```
+
+### Install dependencies
+
+```sh
+yarn
+```
+
+or
+
+```sh
+npm i
+```
+
+### Start development server
+
+```sh
+yarn dev
+```
+
+or
+
+```sh
+npm run dev
+```
+
 ## License
 
 MIT © [Gryt-chat](https://github.com/Gryt-chat)
