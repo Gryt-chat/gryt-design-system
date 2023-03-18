@@ -1,0 +1,16 @@
+{
+  "Input": {
+    "Buttons": "buttons",
+    "Badges": "badges"
+  },
+  "Interactive": {
+    "Server cards": "servercards",
+    "Modals": "modals"
+  },
+  "User": {
+    "Avatars": "avatars"
+  },
+  "Sidebars": {
+    "Server browser filter": "serverBrowserFilter"
+  }
+}

@@ -4,7 +4,7 @@ import { ComponentsWrapper } from '..'
 
 export default function servercards() {
   return (
-    <ComponentsWrapper>
+    <ComponentsWrapper className='p-24'>
       <div className='flex flex-col gap-2 items-center'>
         <h1 className='text-lg font-semibold'>Card without any data</h1>
         <ServerCard title='Title' description='Description' />

@@ -6,7 +6,8 @@ import React from 'react'
 function NavLink({
   children,
   href,
-  router
+  router,
+  ...props
 }: {
   children: any
   href: string
@@ -18,9 +19,36 @@ function NavLink({
         router.pathname === href ? 'font-medium btn-primary ' : 'btn-ghost'
       }`}
       href={href}
+      {...props}
     >
       {children}
     </Link>
+  )
+}
+
+export function NavItems({ router }: { router: NextRouter }) {
+  const navData = require('../navbar.json')
+  return (
+    <>
+      {Object.keys(navData).map((value) => {
+        return (
+          <div key={value} className='flex flex-col gap-2'>
+            <h2 className='text-xl font-semibold'>{value}</h2>
+            {Object.keys(navData[value]).map((second) => {
+              return (
+                <NavLink
+                  key={second}
+                  href={`/components/${navData[value][second]}`}
+                  router={router}
+                >
+                  {second}
+                </NavLink>
+              )
+            })}
+          </div>
+        )
+      })}
+    </>
   )
 }
 
@@ -39,37 +67,19 @@ export function Navbar() {
         GDS
       </Link>
 
-      <div className='flex flex-col gap-2'>
-        <h2 className='text-xl font-semibold'>Input</h2>
-        <NavLink href='/components/buttons' router={router}>
-          Buttons
-        </NavLink>
-        <NavLink href='/components/badges' router={router}>
-          Badges
-        </NavLink>
-      </div>
-
-      <div className='flex flex-col gap-2'>
-        <h2 className='text-xl font-semibold'>Interactive</h2>
-        <NavLink href='/components/servercards' router={router}>
-          Server cards
-        </NavLink>
-        <NavLink href='/components/modals' router={router}>
-          Modals
-        </NavLink>
-      </div>
-
-      <div className='flex flex-col gap-2'>
-        <h2 className='text-xl font-semibold'>User</h2>
-        <NavLink href='/components/avatars' router={router}>
-          Avatars
-        </NavLink>
-      </div>
+      <NavItems router={router} />
     </nav>
   )
 }
 
-export function ComponentsWrapper({ children }: { children?: any }) {
+export function ComponentsWrapper({
+  children,
+  className,
+  ...props
+}: {
+  children?: any
+  className?: string
+}) {
   return (
     <>
       <Head>
@@ -77,7 +87,10 @@ export function ComponentsWrapper({ children }: { children?: any }) {
       </Head>
       <main className='flex columns-2 w-screen h-screen items-center'>
         <Navbar />
-        <div className='grid bg-neutral place-items-center h-full gap-12 p-24 w-full overflow-y-scroll overflow-x-hidden'>
+        <div
+          className={`grid bg-neutral place-items-center h-full gap-12 w-full overflow-y-scroll overflow-x-hidden ${className}`}
+          {...props}
+        >
           {children}
         </div>
       </main>
