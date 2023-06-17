@@ -101,6 +101,15 @@ or
 npm run dev
 ```
 
+### Publish changes
+
+Use `np`
+
+```sh
+yarn global add np
+np
+```
+
 ## License
 
 MIT © [Gryt-chat](https://github.com/Gryt-chat)
