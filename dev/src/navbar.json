@@ -1,16 +1,9 @@
 {
-  "Input": {
-    "Buttons": "buttons",
-    "Badges": "badges"
-  },
-  "Interactive": {
-    "Server cards": "servercards",
-    "Modals": "modals"
-  },
-  "User": {
-    "Avatars": "avatars"
-  },
-  "Sidebars": {
-    "Server browser filter": "serverBrowserFilter"
-  }
+  "avatars": "/components/avatars/",
+  "badges": "/components/badges/",
+  "buttons": "/components/buttons/",
+  "modals": "/components/modals/",
+  "components": "/components/",
+  "servercards": "/components/servercards/",
+  "app": "/"
 }
