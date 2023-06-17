@@ -11,11 +11,10 @@ import {
 } from 'react-icons/bs'
 import React from 'react'
 import { Badge } from '@/index'
-import { PageWrapper } from '@/pageComponents/PageWrapper'
 
 export default function badges() {
   return (
-    <PageWrapper title='Badges' description='Used to display server tags'>
+    <React.Fragment>
       <div
         className='grid gap-9 place-content-center w-full'
         style={{
@@ -113,6 +112,6 @@ export default function badges() {
           </Badge>
         </div>
       </div>
-    </PageWrapper>
+    </React.Fragment>
   )
 }

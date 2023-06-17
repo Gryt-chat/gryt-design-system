@@ -1,10 +1,9 @@
 import { Button } from '@/components/button/Button'
-import { PageWrapper } from '@/pageComponents/PageWrapper'
 import React from 'react'
 
 export default function page() {
   return (
-    <PageWrapper title='Buttons' description='Clicky'>
+    <React.Fragment>
       <Button>Default</Button>
       <Button type='btn-primary'>Primary</Button>
       <Button type='btn-secondary'>Secondary</Button>
@@ -18,6 +17,6 @@ export default function page() {
       <Button type='btn-info'>Info</Button>
       <Button type='btn-success'>Success</Button>
       <Button type='btn-link'>Link</Button>
-    </PageWrapper>
+    </React.Fragment>
   )
 }

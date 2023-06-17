@@ -33,7 +33,7 @@ export function ServerCard({
 }: cardParameterType) {
   return (
     <div
-      className={`serverCard card bg-base-100 flex flex-col rounded-lg overflow-hidden shadow-xl ${className}`}
+      className={`serverCard interactive card bg-base-100 border border-base-200 flex flex-col rounded-lg overflow-hidden shadow-xl ${className}`}
       style={{
         width: cardWith,
         height: cardHeight

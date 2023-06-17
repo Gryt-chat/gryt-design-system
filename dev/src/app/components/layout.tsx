@@ -1,5 +1,6 @@
 import { NavBar } from '@/pageComponents/NavBar'
 import { PageWrapper } from '@/pageComponents/PageWrapper'
+import React from 'react'
 
 export default function RootLayout({
   children
@@ -7,11 +8,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang='en'>
-      <body>
-        <NavBar />
-        <PageWrapper>{children}</PageWrapper>
-      </body>
-    </html>
+    <React.Fragment>
+      <NavBar />
+      <PageWrapper>{children}</PageWrapper>
+    </React.Fragment>
   )
 }

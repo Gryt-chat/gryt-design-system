@@ -1,10 +1,9 @@
 import { ServerCard } from '@/index'
-import { PageWrapper } from '@/pageComponents/PageWrapper'
 import React from 'react'
 
 export default function servercards() {
   return (
-    <PageWrapper title='Server Cards' description='Used to display server info'>
+    <React.Fragment>
       <div className='flex flex-col gap-2 items-center'>
         <h1 className='text-lg font-semibold'>Card without any data</h1>
         <ServerCard title='Title' description='Description' />
@@ -103,6 +102,6 @@ export default function servercards() {
           />
         </div>
       </div>
-    </PageWrapper>
+    </React.Fragment>
   )
 }

@@ -1,12 +1,11 @@
 import { ModalBox, ModalActionWrapper, ModalButton } from '@/index'
-import { PageWrapper } from '@/pageComponents/PageWrapper'
 import Link from 'next/link'
 import React from 'react'
 
 const WelcomeModal = () => {
   const id = 'WelcomeModal'
   return (
-    <>
+    <React.Fragment>
       <ModalButton modalId={id} className='btn btn-ghost'>
         Welcome
       </ModalButton>
@@ -39,14 +38,14 @@ const WelcomeModal = () => {
           <ModalButton modalId={id}>Let&#39;s go!</ModalButton>
         </ModalActionWrapper>
       </ModalBox>
-    </>
+    </React.Fragment>
   )
 }
 
 const NewsModal = () => {
   const id = 'NewsModal'
   return (
-    <>
+    <React.Fragment>
       <ModalButton modalId={id} className='btn-primary'>
         News
       </ModalButton>
@@ -102,14 +101,14 @@ const NewsModal = () => {
           </ModalButton>
         </ModalActionWrapper>
       </ModalBox>
-    </>
+    </React.Fragment>
   )
 }
 
 const WarningModal = () => {
   const id = 'WarningModal'
   return (
-    <>
+    <React.Fragment>
       <ModalButton modalId={id} className='btn-warning'>
         Warning
       </ModalButton>
@@ -135,14 +134,14 @@ const WarningModal = () => {
           </ModalButton>
         </ModalActionWrapper>
       </ModalBox>
-    </>
+    </React.Fragment>
   )
 }
 
 const SuccessModal = () => {
   const id = 'SuccessModal'
   return (
-    <>
+    <React.Fragment>
       <ModalButton modalId={id} className='btn-success'>
         Success
       </ModalButton>
@@ -160,14 +159,14 @@ const SuccessModal = () => {
           </ModalButton>
         </ModalActionWrapper>
       </ModalBox>
-    </>
+    </React.Fragment>
   )
 }
 
 const InfoModal = () => {
   const id = 'InfoModal'
   return (
-    <>
+    <React.Fragment>
       <ModalButton modalId={id} className='btn-info'>
         Info
       </ModalButton>
@@ -185,13 +184,13 @@ const InfoModal = () => {
           </ModalButton>
         </ModalActionWrapper>
       </ModalBox>
-    </>
+    </React.Fragment>
   )
 }
 
 export default function badges() {
   return (
-    <PageWrapper title='Modals' description='Annoying popups'>
+    <React.Fragment>
       <div className='flex flex-row gap-4'>
         <WelcomeModal />
         <NewsModal />
@@ -199,6 +198,6 @@ export default function badges() {
         <SuccessModal />
         <InfoModal />
       </div>
-    </PageWrapper>
+    </React.Fragment>
   )
 }

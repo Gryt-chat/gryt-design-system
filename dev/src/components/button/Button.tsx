@@ -49,9 +49,11 @@ export function Button({
   loadingIcon,
   ...props
 }: buttonParameterType) {
-  const clsname = `btn gap-2${type ? ` ${type}` : ''}${size ? `${size}` : ''}${
-    iconOnly ? ` ${iconOnly}` : ''
-  }${noAnimation !== undefined ? ' glass' : ''} ${className ?? ''}`
+  const clsname = `btn no-animation interactive gap-2${type ? ` ${type}` : ''}${
+    size ? `${size}` : ''
+  }${iconOnly ? ` ${iconOnly}` : ''}${
+    noAnimation !== undefined ? ' glass' : ''
+  } ${className ?? ''}`
   const content =
     loading && !loadingIcon ? (
       <span className='loading loading-dots loading-xs' />

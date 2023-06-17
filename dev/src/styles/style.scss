@@ -37,23 +37,20 @@ body {
   border-radius: 4px;
 }
 
-.serverCard {
-  cursor: pointer;
-  user-select: none;
-  transition-property: color, background-color, border-color,
-    text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter,
-    backdrop-filter;
-  transition-duration: 200ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  animation: button-pop var(--animation-btn, 0.25s) ease-out;
-
-  &:hover {
-    transform: scale(1.01);
+@layer utilities {
+  .interactive {
+    transform: scale(1);
+    transition: transform 0.15s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    user-select: none;
   }
 
-  &:active:hover,
-  &:active:focus {
-    animation: none;
-    transform: scale(0.99);
+  .interactive:hover {
+    transform: scale(1.06);
+  }
+  .interactive:active:focus,
+  .interactive:hover:active {
+    transform: scale(1);
   }
 }

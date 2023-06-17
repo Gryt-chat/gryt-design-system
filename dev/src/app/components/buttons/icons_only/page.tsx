@@ -16,55 +16,44 @@ import {
 export default function page() {
   return (
     <React.Fragment>
-      <Button>
-        <BsCartFill className='w-4 h-4' /> Default
+      <Button iconOnly='btn-square'>
+        <BsCartFill className='w-4 h-4' />
       </Button>
-      <Button type='btn-primary'>
-        <BsHandIndexFill className='w-4 h-4' /> Primary
+      <Button type='btn-primary' iconOnly='btn-square'>
+        <BsHandIndexFill className='w-4 h-4' />
       </Button>
-      <Button type='btn-secondary'>
+      <Button type='btn-secondary' iconOnly='btn-square'>
         <BsCheckCircleFill className='w-4 h-4' />
-        Secondary
       </Button>
-      <Button type='btn-accent'>
+      <Button type='btn-accent' iconOnly='btn-square'>
         <BsXCircleFill className='w-4 h-4' />
-        Accent
       </Button>
-      <Button type='btn-ghost'>
+      <Button type='btn-ghost' iconOnly='btn-square'>
         <BsCalendarEventFill className='w-4 h-4' />
-        Ghost
       </Button>
-      <Button type='btn-outline'>
+      <Button type='btn-outline' iconOnly='btn-square'>
         <BsDoorOpenFill className='w-4 h-4' />
-        Outline
       </Button>
-      <Button type='btn-active'>
+      <Button type='btn-active' iconOnly='btn-square'>
         <BsDoorOpenFill className='w-4 h-4' />
-        Active
       </Button>
-      <Button type='btn-disabled'>
+      <Button type='btn-disabled' iconOnly='btn-square'>
         <BsDoorOpenFill className='w-4 h-4' />
-        Disabled
       </Button>
-      <Button type='btn-error'>
+      <Button type='btn-error' iconOnly='btn-square'>
         <BsExclamationTriangleFill className='w-4 h-4' />
-        Error
       </Button>
-      <Button type='btn-warning'>
+      <Button type='btn-warning' iconOnly='btn-square'>
         <BsFillExclamationCircleFill className='w-4 h-4' />
-        Warning
       </Button>
-      <Button type='btn-info'>
+      <Button type='btn-info' iconOnly='btn-square'>
         <BsInfoSquareFill className='w-4 h-4' />
-        Info
       </Button>
-      <Button type='btn-success'>
+      <Button type='btn-success' iconOnly='btn-square'>
         <BsCheckCircleFill className='w-4 h-4' />
-        Success
       </Button>
-      <Button type='btn-link'>
+      <Button type='btn-link' iconOnly='btn-square'>
         <BsLink className='w-4 h-4' />
-        Link
       </Button>
     </React.Fragment>
   )
