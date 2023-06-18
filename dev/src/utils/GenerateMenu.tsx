@@ -68,9 +68,9 @@ function checkData(
 
   return Object.keys(data).map((level1Key) => {
     const name =
-      currentName !== undefined
-        ? navbarNames[level1Key as keyof typeof navbarNames]
-        : currentName ?? level1Key
+      level1Key !== undefined
+        ? navbarNames[level1Key as keyof typeof navbarNames] ?? level1Key
+        : currentName
 
     // If has children > 1 (aka a category🤓)
     if (

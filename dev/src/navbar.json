@@ -5,6 +5,7 @@
   "buttons": "/components/buttons/",
   "regular": "/components/buttons/regular/",
   "with_icon": "/components/buttons/with_icon/",
+  "inputs": "/components/inputs/",
   "modals": "/components/modals/",
   "components": "/components/",
   "servercards": "/components/servercards/",

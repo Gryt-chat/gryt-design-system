@@ -127,7 +127,7 @@ const WarningModal = () => {
         </div>
         <ModalActionWrapper>
           <ModalButton className='btn-ghost' modalId={id}>
-            Yes, delete my channel
+            Yes, delete channel
           </ModalButton>
           <ModalButton className='btn-warning' modalId={id}>
             No, cancel
@@ -175,7 +175,7 @@ const InfoModal = () => {
           <h1 className='text-2xl font-bold'>Server updated</h1>
           <p>
             Your server has been successfully updated to the latest version{' '}
-            <strong>(v. 2.6.3)</strong>
+            <strong>(v2.6.3)</strong>
           </p>
         </div>
         <ModalActionWrapper>
