@@ -32,7 +32,7 @@ interface checkboxParameters
     HTMLInputElement
   > {
   children?: React.ReactNode
-  checkboxRight?: boolean
+  isRightSide?: boolean
   className?: string
   checkboxAnimated?: boolean
   inputType?: checkboxType | toggleType
@@ -42,7 +42,7 @@ interface checkboxParameters
 
 export function Checkbox({
   children,
-  checkboxRight,
+  isRightSide,
   className,
   checkboxAnimated,
   inputType,
@@ -61,10 +61,10 @@ export function Checkbox({
   )
 
   return children ? (
-    <label className='label cursor-pointer flex gap-2'>
-      {!checkboxRight && chckBox}
-      <span className='label-text'>{children}</span>
-      {checkboxRight && chckBox}
+    <label className='label cursor-pointer flex gap-2 justify-between items-center min-h-[32px]'>
+      {!isRightSide && chckBox}
+      <span className='label-text font-medium'>{children}</span>
+      {isRightSide && chckBox}
     </label>
   ) : (
     chckBox

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Section } from '@/pageComponents/Section'
 import { Checkbox } from '@/components/checkbox/Checkbox'
+import InputGroup from '@/components/InputGroup/InputGroup'
 
 export default function buttons() {
   return (
@@ -37,6 +38,43 @@ export default function buttons() {
         <Checkbox isToggle inputSize='toggle-xs'>
           I agree
         </Checkbox>
+      </Section>
+
+      <Section header='Input groups'>
+        <div className='flex flex-col gap-10'>
+          <InputGroup
+            title='Friends'
+            description='All actions related to friends.'
+          >
+            <Checkbox isToggle isRightSide>
+              Friend comes online
+            </Checkbox>
+            <Checkbox isToggle isRightSide>
+              Incoming message
+            </Checkbox>
+            <Checkbox isToggle isRightSide>
+              Incoming friend request
+            </Checkbox>
+          </InputGroup>
+
+          <InputGroup
+            title='Games'
+            description='Game invitations, party messages, etc.'
+          >
+            <Checkbox isToggle isRightSide>
+              Game invitation
+            </Checkbox>
+            <Checkbox isToggle isRightSide>
+              Party invitation
+            </Checkbox>
+            <Checkbox isToggle isRightSide>
+              New party member
+            </Checkbox>
+            <Checkbox isToggle isRightSide>
+              Match starting
+            </Checkbox>
+          </InputGroup>
+        </div>
       </Section>
     </React.Fragment>
   )
