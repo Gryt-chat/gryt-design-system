@@ -9,55 +9,64 @@ type checkboxType =
   | 'checkbox-error'
   | 'checkbox-info'
 
+type toggleType =
+  | 'toggle-primary'
+  | 'toggle-secondary'
+  | 'toggle-accent'
+  | 'toggle-success'
+  | 'toggle-warning'
+  | 'toggle-error'
+  | 'toggle-info'
+
 type checkboxSize =
   | 'checkbox-xs'
   | 'checkbox-sm'
   | 'checkbox-md'
   | 'checkbox-lg'
 
-type checkboxParameters = {
+type toggleSize = 'toggle-xs' | 'toggle-sm' | 'toggle-md' | 'toggle-lg'
+
+interface checkboxParameters
+  extends React.DetailedHTMLProps<
+    React.InputHTMLAttributes<HTMLInputElement>,
+    HTMLInputElement
+  > {
   children?: React.ReactNode
   checkboxRight?: boolean
   className?: string
-  isAnimated?: boolean
-  type?: checkboxType
-  size?: checkboxSize
+  checkboxAnimated?: boolean
+  inputType?: checkboxType | toggleType
+  inputSize?: checkboxSize | toggleSize
+  isToggle?: boolean
 }
 
 export function Checkbox({
   children,
   checkboxRight,
   className,
-  isAnimated,
-  type,
-  size
+  checkboxAnimated,
+  inputType,
+  inputSize,
+  isToggle,
+  ...rest
 }: checkboxParameters) {
-  return children ? (
-    <label className='label cursor-pointer flex gap-2'>
-      {!checkboxRight && (
-        <input
-          type='checkbox'
-          className={`checkbox${
-            isAnimated ? ' interactive' : ''
-          } ${type} ${size} ${className}`}
-        />
-      )}
-      <span className='label-text'>{children}</span>
-      {checkboxRight && (
-        <input
-          type='checkbox'
-          className={`checkbox${
-            isAnimated ? ' interactive' : ''
-          } ${type} ${size} ${className}`}
-        />
-      )}
-    </label>
-  ) : (
+  const chckBox = (
     <input
       type='checkbox'
-      className={`checkbox${
-        isAnimated ? ' interactive' : ''
-      } ${type} ${size} ${className}`}
+      className={`${isToggle ? 'toggle' : 'checkbox'}${
+        checkboxAnimated ? ' interactive' : ''
+      } ${inputType} ${inputSize} ${className}`}
+      {...rest}
     />
+  )
+
+  return children ? (
+    <label className='label cursor-pointer flex gap-2'>
+      {!checkboxRight && chckBox}
+      <span className='label-text'>{children}</span>
+      {checkboxRight && chckBox}
+    </label>
+  ) : (
+    chckBox
   )
 }
