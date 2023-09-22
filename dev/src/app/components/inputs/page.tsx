@@ -5,7 +5,7 @@ import InputGroup from '@/components/InputGroup/InputGroup'
 
 export default function buttons() {
   return (
-    <React.Fragment>
+    <div className='grid grid-cols-2 gap-12'>
       <Section header='Checkbox'>
         <Checkbox checkboxAnimated />
         <Checkbox
@@ -76,6 +76,6 @@ export default function buttons() {
           </InputGroup>
         </div>
       </Section>
-    </React.Fragment>
+    </div>
   )
 }

@@ -5,7 +5,7 @@ import { Section } from '@/pageComponents/Section'
 
 export default function buttons() {
   return (
-    <React.Fragment>
+    <div className='grid grid-cols-2 gap-12'>
       <Section header='Normal'>
         <Button>Activate</Button>
         <Button type='btn-secondary'>Disable</Button>
@@ -37,6 +37,6 @@ export default function buttons() {
           <BsCheckCircleFill className='w-4 h-4' />
         </Button>
       </Section>
-    </React.Fragment>
+    </div>
   )
 }

@@ -4,12 +4,12 @@ import { Button } from '..'
 export default function Page() {
   return (
     <div className='w-screen h-screen flex flex-col gap-8 place-items-center justify-center'>
-      <div>
+      <div className='flex flex-col gap-2 items-center'>
         <h1 className='text-4xl text-primary font-bold'>Gryt UI</h1>
-        <p className='text-xl font-medium text-primary'>Welcome!</p>
+        <p className='font-medium text-primary'>Welcome!👋</p>
       </div>
       <Button isLink href='/components'>
-        Go to README
+        Continue
       </Button>
     </div>
   )

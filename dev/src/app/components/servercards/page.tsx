@@ -4,24 +4,26 @@ import React from 'react'
 export default function servercards() {
   return (
     <React.Fragment>
-      <div className='flex flex-col gap-2 items-center'>
-        <h1 className='text-lg font-semibold'>Card without any data</h1>
-        <ServerCard title='Title' description='Description' />
+      <div className='flex gap-12'>
+        <div className='flex flex-col gap-2 items-center'>
+          <h1 className='text-lg font-semibold'>Card without any data</h1>
+          <ServerCard title='Title' description='Description' />
+        </div>
+        <div className='flex flex-col gap-2 items-center'>
+          <h1 className='text-lg font-semibold'>Sample card</h1>
+          <ServerCard
+            title='Gryt'
+            description='Welcome to our community! We are excited to have you here as a member of our growing community of privacy-conscious individuals.'
+            logoURL='/images/duck.jpeg'
+            bannerColor='#F8D385'
+            logoColor='#272935'
+          />
+        </div>
       </div>
-      <div className='flex flex-col gap-2 items-center'>
-        <h1 className='text-lg font-semibold'>Sample card</h1>
-        <ServerCard
-          title='Gryt'
-          description='Welcome to our community! We are excited to have you here as a member of our growing community of privacy-conscious individuals.'
-          logoURL='/images/duck.jpeg'
-          bannerColor='#F8D385'
-          logoColor='#272935'
-        />
-      </div>
-      <div className='flex flex-col gap-2 items-center w-full'>
+      <div className='flex flex-col gap-2 w-full'>
         <h1 className='text-lg font-semibold'>Example cards:</h1>
         <div
-          className='grid gap-9 place-content-center w-full'
+          className='grid gap-12 w-full'
           style={{
             gridTemplateColumns: 'repeat(auto-fit, 280px)',
             gridAutoFlow: 'dense'

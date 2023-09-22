@@ -15,7 +15,7 @@ import {
 
 export default function page() {
   return (
-    <React.Fragment>
+    <div className='grid grid-cols-6 gap-12'>
       <Button iconOnly='btn-square'>
         <BsCartFill className='w-4 h-4' />
       </Button>
@@ -55,6 +55,6 @@ export default function page() {
       <Button type='btn-link' iconOnly='btn-square'>
         <BsLink className='w-4 h-4' />
       </Button>
-    </React.Fragment>
+    </div>
   )
 }

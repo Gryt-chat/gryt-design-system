@@ -3,6 +3,7 @@
   "badges": "/components/badges/",
   "icons_only": "/components/buttons/icons_only/",
   "buttons": "/components/buttons/",
+  "colors": "/components/colors/",
   "regular": "/components/buttons/regular/",
   "with_icon": "/components/buttons/with_icon/",
   "inputs": "/components/inputs/",

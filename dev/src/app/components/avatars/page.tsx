@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function badges() {
   return (
-    <React.Fragment>
+    <div className='grid grid-cols-2 gap-12'>
       <Section header='Rounded'>
         <Avatar src='/images/duck.jpeg' status='online' />
         <Avatar src='/images/cowboy.jpeg' />
@@ -22,6 +22,6 @@ export default function badges() {
         <Avatar src='/images/cowboy.jpeg' type='square' />
         <Avatar src='/images/cat.png' type='square' status='ingame' />
       </Section>
-    </React.Fragment>
+    </div>
   )
 }

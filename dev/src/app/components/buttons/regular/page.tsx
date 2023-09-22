@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function page() {
   return (
-    <React.Fragment>
+    <div className='grid grid-cols-4 gap-12'>
       <Button>Default</Button>
       <Button type='btn-primary'>Primary</Button>
       <Button type='btn-secondary'>Secondary</Button>
@@ -17,6 +17,6 @@ export default function page() {
       <Button type='btn-info'>Info</Button>
       <Button type='btn-success'>Success</Button>
       <Button type='btn-link'>Link</Button>
-    </React.Fragment>
+    </div>
   )
 }
