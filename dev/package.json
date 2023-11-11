@@ -3,8 +3,8 @@
   "version": "0.2.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "npm run navbar && next dev",
+    "build": "npm run navbar && next build",
     "start": "next start",
     "lint": "next lint",
     "navbar": "node --experimental-modules GenerateNavbar.mjs"
