@@ -1,11 +1,11 @@
 import { Metadata } from 'next'
 import '../styles/style.scss'
 // eslint-disable-next-line camelcase
-import { Poppins, Noto_Color_Emoji } from 'next/font/google'
+import { DM_Sans, Noto_Color_Emoji } from 'next/font/google'
 
-const defaultFont = Poppins({
+const defaultFont = DM_Sans({
   subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900']
+  weight: ['400', '500', '700']
 })
 
 const emojiFont = Noto_Color_Emoji({
